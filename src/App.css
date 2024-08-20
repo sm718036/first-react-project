@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: rgba(16, 24, 40, 1);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  padding: 1.75rem 7.5rem;
+}
+
+nav,
+.search-bar-container,
+.nav-menu,
+.account-control-container,
+.explore-btn-container,
+.nav-menu,
+.nav-menuSearch-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar-container {
+  border: 1px solid rgba(208, 213, 221, 1);
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  overflow: hidden;
+  padding-left: 0.825rem;
+}
+
+.search-bar-input {
+  border: none;
+  outline: none;
+}
+
+.explore-btn-container {
+  gap: 0.5rem;
+  background: rgba(242, 255, 251, 1);
+  padding: 0.5rem 1rem;
+  color: rgba(32, 180, 134, 1);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-menuSearch-container {
+  gap: 1.25rem;
+}
+
+.nav-menu,
+.account-control-container {
+  gap: 1.25rem;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.nav-item .active,
+.nav-link:hover {
+  color: rgba(26, 144, 107, 1);
+}
+
+.sign-in-link {
+  font-weight: 600;
+}
+
+.create-acct-btn {
+  background: rgba(32, 180, 134, 1);
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+main {
+  width: 100%;
+}
+
+section.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 70px;
+  gap: 3.125rem;
+  padding: 1.75rem 7.5rem;
+}
+
+.sec-content-container {
+  grid-area: 1/1/2/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.125rem;
+}
+
+.sec-content-container>img {
+  align-self: center;
+}
+
+.sec-img-container {
+  grid-area: 1/2/2/3;
+}
+
+.sec-footer {
+  grid-area: 2/1/3/3;
+}
+
+.sec-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.25rem;
+}
+
+.sec-title {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 5.125rem;
+}
+
+.sec-title span {
+  color: rgba(32, 180, 134, 1);
+}
+
+.title-desc {
+  color: rgba(100, 100, 100, 1);
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.sec-btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.75rem;
+}
+
+.sec-btns-container>button {
+  padding: 1rem 1.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  text-transform: capitalize;
+}
+
+.get-started-btn {
+  background: rgba(32, 180, 134, 1);
+  color: white;
+}
+
+.free-trial-btn {
+  background: rgba(234, 255, 249, 1);
+  color: rgba(59, 196, 154, 1);
+}
+
+.sec-features-container,
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  text-transform: capitalize;
+  color: rgba(29, 41, 57, 0.7);
+  font-weight: 400;
+}
+
+.sec-features-container {
+  width: 100%;
+}
+
+.hero-right,
+.img-container,
+.women-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  position: relative;
+}
+
+.women-img-container {
+  width: 495px;
+  height: 495px;
+  background: rgba(26, 144, 107, 1);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.women-img-container.green-circle.large {
+  background: none;
+  border: 1px solid rgba(26, 144, 107, 1);
+  position: absolute;
+  top: -30px;
+  left: 10px;
+}
+
+.women-img-container.green-circle-filled.large {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: rgba(26, 144, 107, 1);
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.green-circle-multiple {
+  background: transparent;
+  position: absolute;
+  bottom: -252px;
+  right: -120px;
+}
+
+.sub-green-cirlce.first {
+  width: 414px;
+  height: 414px;
+  border: 1px solid rgba(32, 180, 134, 0.25);
+  border-radius: 50%;
+}
+
+.sub-green-cirlce.second {
+  width: 344px;
+  height: 344px;
+  border: 1px solid rgba(32, 180, 134, 0.25);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.sub-green-cirlce.third {
+  width: 265px;
+  height: 265px;
+  border: 1px solid rgba(32, 180, 134, 0.25);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.sub-green-cirlce.fourth {
+  width: 162px;
+  height: 162px;
+  border: 1px solid rgba(32, 180, 134, 0.25);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.green-cirlce-filled.small {
+  width: 100px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(26, 144, 107, 1);
+  position: absolute;
+  bottom: -300px;
+}
+
+.women-img-container img {
+  position: absolute;
+}
+
+.young-student-woman {
+  top: 70px;
+  left: 40px
+}
+
+img.ellipse-large-green {
+  top: 70px;
+  left: 70px;
+}
+
+img.green-circle-large {
+  top: -100px;
+}
+
+.courses-progress,
+.tutors,
+.video-courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.725rem;
+  background: rgba(245, 245, 244, 1);
+  border-radius: 18.36px;
+  border: 1px solid rgba(32, 180, 134, 1);
+  box-shadow: 0px 18.36px 38.25px 0px rgba(0, 0, 0, 0.15);
+  padding: 18.36px;
+  position: absolute;
+}
+
+.courses-progress {
+  width: 150px;
+  height: 189.2px;
+  flex-direction: column;
+  gap: 12.24px;
+  top: -20px;
+  right: -20px;
+}
+
+.tutors {
+  width: 164.92px;
+  height: 85.68px;
+  bottom: 30px;
+  right: 20px;
+}
+
+.video-courses {
+  width: 214.16px;
+  height: 90.84px;
+  top: 150px;
+  left: -60px;
+}
+
+.tutors>img,
+.video-courses>img {
+  background: rgba(26, 144, 107, 1);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.img-container div:not(:first-child)>span {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container div p {
+  text-transform: capitalize;
+  color: rgba(16, 24, 40, 1);
+  font-size: 15px;
+}
+
+.stats {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.sec-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 55px;
+}
+
+.collaboration .collab-count {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: rgba(26, 144, 107, 1);
+}
+
+.collaboration .collab-text{
+  color: rgba(16, 24, 40, 1);
+  text-transform: capitalize;
+  font-size: 25px;
+}
